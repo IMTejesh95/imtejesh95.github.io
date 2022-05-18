@@ -23,7 +23,7 @@ const Projects: NextPage<ProjectProps> = (props) => {
 
   return (
     <Fragment>
-      <PageLayout title={title} description={subtitle}>
+      <PageLayout title={''} description={subtitle}>
         <PageSlideFade>
           <VStack align="start">
             <Header underlineColor={TURQUOISE} mt={0} mb={2}>

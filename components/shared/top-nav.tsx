@@ -33,22 +33,22 @@ import { MotionBox } from 'components/shared/animations/motion';
 
 const webLinks = [
   { name: 'About', path: '/about' },
-  { name: 'Blog', path: '/blog' }
+  // { name: 'Blog', path: '/blog' }
 ];
 
 const mobileLinks = [
   { name: 'Projects', path: '/projects' },
-  { name: 'Open Source', path: '/open-source' },
-  { name: 'Blog', path: '/blog' },
-  { name: 'Changelog', path: '/changelog' }
+  // { name: 'Open Source', path: '/open-source' },
+  // { name: 'Blog', path: '/blog' },
+  // { name: 'Changelog', path: '/changelog' }
 ];
 
 const dropdownLinks = [
   { name: 'Projects', path: '/projects' },
   { name: 'Tech Stack', path: '/tech-stack' },
-  { name: 'Open Source', path: '/open-source' },
+  // { name: 'Open Source', path: '/open-source' },
   { name: 'Achievements', path: '/achievements' },
-  { name: 'Changelog', path: '/changelog' }
+  // { name: 'Changelog', path: '/changelog' }
   // { name: "Developer Story", path: "/developer-story" }
 ];
 
@@ -101,10 +101,10 @@ interface MenuLinkProps {
 const MenuLink = (props: MenuLinkProps) => {
   const iconsObj = {
     '/tech-stack': <Icon as={AiTwotoneThunderbolt} size={18} color={props.color} />,
-    '/open-source': <Icon as={BsBook} size={18} color={props.color} />,
+    // '/open-source': <Icon as={BsBook} size={18} color={props.color} />,
     '/achievements': <Icon as={BsCheckCircle} size={18} color={props.color} />,
     '/projects': <Icon as={MdTimeline} size={18} color={props.color} />,
-    '/changelog': <Icon as={CgArrowsExchange} size={18} color={props.color} />
+    // '/changelog': <Icon as={CgArrowsExchange} size={18} color={props.color} />
   };
 
   return (
@@ -171,7 +171,7 @@ export default function TopNav() {
                   size={'sm'}
                   showBorder={true}
                   borderColor={linkColor}
-                  src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
+                  src={'/assets/images/placeholder.png'}
                 />
               </NextLink>
             </MotionBox>

@@ -18,6 +18,8 @@ import { useLinkColor } from 'components/theme'
 import PopularArticles from './PopularArticles'
 import { BlogPostProps } from 'interfaces/interface'
 import { newContent } from 'data/data'
+import Projects from 'pages/projects'
+import { projectsList } from '../../data/projectData'
 
 const ANIMATION_DURATION = 0.5
 const ORANGE = '#ff9400'
@@ -60,7 +62,7 @@ const Home: React.FC<BlogPostProps> = (props) => {
               size={'2xl'}
               showBorder={true}
               borderColor={linkColor}
-              src={'https://avatars2.githubusercontent.com/u/37842853?v=4'}
+              src={'/assets/images/placeholder.png'}
             />
           </MotionBox>
         </MotionBox>
@@ -134,24 +136,24 @@ const Home: React.FC<BlogPostProps> = (props) => {
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{' '}
             <Box as="strong" fontWeight="600">
-              Ahmad
+              Tejesh
             </Box>{' '}
             and I&apos;m a{' '}
             <Box as="span" whiteSpace="nowrap">
-              Full Stack Developer and
+              Software Engineer
             </Box>{' '}
-            <Box as="span" whiteSpace="nowrap">
+            {/* <Box as="span" whiteSpace="nowrap">
               an open source lover&nbsp;
-            </Box>
+            </Box> */}
             from{' '}
             <Box as="span" whiteSpace="nowrap">
-              Pakistan 🇵🇰
+              India 🇮🇳
             </Box>
           </Box>
-          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+          {/* <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             This is my digital garden, where I write about the things I&apos;m
             working on and share what I&apos;ve learned. 😊
-          </Box>
+          </Box> */}
         </MotionFlex>
       </Flex>
 
@@ -172,8 +174,9 @@ const Home: React.FC<BlogPostProps> = (props) => {
         zIndex={1}
       >
         <Box mt={10}>
-          <ContentBox linkColor={linkColor} />
-          <PopularArticles posts={posts} />
+          {/* <ContentBox linkColor={linkColor} /> */}
+          {/* <PopularArticles posts={posts} /> */}
+          <Projects projects={projectsList} />
         </Box>
       </MotionBox>
     </Flex>

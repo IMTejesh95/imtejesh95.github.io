@@ -108,7 +108,7 @@ const Achievements = () => {
               Framer-motion,{' '}
               <ExternalLink
                 color={linkColor}
-                url="https://github.com/MA-Ahmad/myPortfolio"
+                url="https://github.com/IMTejesh95/myPortfolio"
                 text={'source on Github'}
                 target="_blank"
               />
@@ -126,7 +126,7 @@ const Achievements = () => {
               Published or contributed to{' '}
               <ExternalLink
                 color={linkColor}
-                url="https://github.com/MA-Ahmad?tab=repositories"
+                url="https://github.com/IMTejesh95?tab=repositories"
                 text={'32 open-source repositories'}
                 target="_blank"
               />
@@ -144,7 +144,7 @@ const Achievements = () => {
               Built my portfolio website with React and ChakraUI,{' '}
               <ExternalLink
                 color={linkColor}
-                url="https://github.com/MA-Ahmad/portfolio2"
+                url="https://github.com/IMTejesh95/portfolio2"
                 text={'source on Github'}
                 target="_blank"
               />
