@@ -1,122 +1,122 @@
 export const companies = [
   {
-    title: 'Phaedra Solutions',
-    alt: 'PS image',
+    title: 'GS Lab',
+    alt: 'GS Lab',
     role: 'Senior Software Engineer',
-    skills: ['ruby', 'rails', 'typescript', 'javascript', 'react', 'aws'],
-    period: '2019 - Present',
-    logo: '/assets/images/logos/phaedra.jpeg'
+    skills: ['Node.js', 'TypeScript', 'Python', 'Next.js', 'GraphQL', 'Docker', 'Kubernetes'],
+    period: '2021 - Present',
+    logo: '/assets/images/logos/gslab.jpeg'
+  },
+  {
+    title: 'Centre for Development of Advanced Computing (C-DAC)',
+    alt: 'C-DAC',
+    role: 'Software Engineer',
+    skills: ['Python', 'Django', 'Java', 'JavaScript', 'SpringBoot', 'Angular', 'HPC'],
+    period: '2018 - 2021',
+    logo: '/assets/images/logos/cdac.jpeg'
   }
 ];
 
 export const institutes = [
   {
-    short_title: 'FAST - NUCES',
-    title: 'National University of Computer and Emerging Sciences',
-    alt: 'Nuces image',
-    role: "Bachelor's Degree in Computer Science",
-    skills: ['project management', 'web development', 'data structures'],
-    period: '2013 - 2017',
-    startingYear: '2013',
-    logo: '/assets/images/logos/fast.png',
+    short_title: 'SubBeam',
+    title: 'SunBeam Institute of Information Technology, Pune-Karad',
+    alt: 'SunBeam',
+    role: 'PG Diploma in Advance Computing',
+    skills: ['software-development', 'data-structures', 'programming', 'soft-skills'],
+    period: '2018',
+    startingYear: '2018',
+    logo: '/assets/images/logos/sunbeam.jpeg',
     awards: [
       {
-        title: 'Speed Programming Battle',
-        description: 'Won speed programming battle which held at FAST - NUCES.',
-        date: 'May 1, 2015'
-      },
-      {
-        title: 'Silver Medal',
-        description:
-          'This medal was awarded to me by FAST - NUCES for getting a CGPA of 3.9 in 2nd semester.',
-        date: 'May 1, 2014'
-      },
-      {
-        title: 'Speed Programming Battle',
-        description: 'Won speed programming battle which held at FAST - NUCES.',
-        date: 'Nov 1, 2013'
+        title: 'Best Ongoing Student',
+        description: 'Awarded best ongoing student of the batch.',
+        date: 'Aug 7, 2018'
       }
     ]
+  },
+  {
+    short_title: 'SGBAU',
+    title: 'Sant Gadge Baba Amravati University, Amravati',
+    alt: 'SGBAU',
+    role: "Bachelor's Degree in Computer Science",
+    skills: [
+      'software-engineering',
+      'data-structures',
+      'programming',
+      'soft-skills',
+      'computer-science'
+    ],
+    period: '2013 - 2017',
+    startingYear: '2013',
+    logo: '/assets/images/logos/sgbau.jpeg',
+    awards: []
   }
 ];
 
 export const skillsArray = [
   {
-    name: 'Ruby on Rails',
-    description: 'Web development',
-    link: 'https://rubyonrails.org/',
+    name: 'Node.js',
+    description: 'Server-Side JavaScript Runtime',
+    link: 'https://nodejs.org/en',
     type: 'development',
-    image: '/assets/images/skills/rails.png'
-  },
-  {
-    name: 'React',
-    description: 'Web development',
-    link: 'https://reactjs.org/',
-    type: 'development',
-    image: '/assets/images/skills/react.png'
-  },
-  {
-    name: 'Ruby',
-    description: 'Web development, scrapping',
-    link: 'https://www.ruby-lang.org/en/',
-    type: 'development',
-    image: '/assets/images/skills/ruby.png'
-  },
-  {
-    name: 'Python',
-    description: 'Web development, scrapping',
-    link: 'https://www.python.org/',
-    type: 'development',
-    image: '/assets/images/skills/python.png'
-  },
-  {
-    name: 'Javascript',
-    description: 'Web development',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    type: 'development',
-    image: '/assets/images/skills/javascript.png'
+    image: '/assets/images/skills/nodejs.png'
   },
   {
     name: 'Typescript',
-    description: 'Web development',
+    description: 'Programming Language',
     link: 'https://www.typescriptlang.org/',
     type: 'development',
     image: '/assets/images/skills/typescript.png'
   },
   {
-    name: 'Html5',
-    description: 'Web layouts',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+    name: 'Python',
+    description: 'Programming Language',
+    link: 'https://www.python.org/',
     type: 'development',
-    image: '/assets/images/skills/html-5.png'
+    image: '/assets/images/skills/python.png'
   },
   {
-    name: 'Css3',
-    description: 'Web design',
-    link: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
-    type: 'design',
-    image: '/assets/images/skills/css3.png'
+    name: 'Java',
+    description: 'Programming Language',
+    link: 'https://www.java.com/en/',
+    type: 'development',
+    image: '/assets/images/skills/java2.png'
   },
   {
-    name: 'Bootstrap',
-    description: 'Web design',
-    link: 'https://getbootstrap.com/',
-    type: 'design',
-    image: '/assets/images/skills/bootstrap.png'
+    name: 'Express.js',
+    description: 'Back-end Web Framework',
+    link: 'https://expressjs.com/',
+    type: 'development',
+    image: '/assets/images/skills/expressjs.png'
   },
   {
-    name: 'Postgres',
+    name: 'Django (DRF)',
+    description: 'Web Development',
+    link: 'https://www.djangoproject.com/',
+    type: 'development',
+    image: '/assets/images/skills/django.png'
+  },
+  {
+    name: 'Javascript',
+    description: 'Programming Language',
+    link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
+    type: 'development',
+    image: '/assets/images/skills/javascript.png'
+  },
+  {
+    name: 'React',
+    description: 'Front-end JS Lib',
+    link: 'https://reactjs.org/',
+    type: 'development',
+    image: '/assets/images/skills/react.png'
+  },
+  {
+    name: 'PostgreSQL',
     description: 'Database',
     link: 'https://www.postgresql.org/',
     type: 'database',
     image: '/assets/images/skills/postgresql.png'
-  },
-  {
-    name: 'Mysql',
-    description: 'Database',
-    link: 'https://www.mysql.com/',
-    type: 'database',
-    image: '/assets/images/skills/mysql.png'
   },
   {
     name: 'Redis',
@@ -126,46 +126,18 @@ export const skillsArray = [
     image: '/assets/images/skills/redis.png'
   },
   {
-    name: 'Heroku',
-    description: 'Devops',
-    link: 'https://www.heroku.com/',
-    type: 'devops',
-    image: '/assets/images/skills/heroku.png'
-  },
-  {
     name: 'AWS',
-    description: 'Devops',
+    description: 'DevOps',
     link: 'https://aws.amazon.com/',
     type: 'devops',
     image: 'assets/images/skills/aws.png'
   },
   {
-    name: 'Digital Ocean',
-    description: 'Devops',
-    link: 'https://www.digitalocean.com/',
-    type: 'devops',
-    image: '/assets/images/skills/digital-ocean.png'
-  },
-  {
-    name: 'Nginx',
-    description: 'Web server',
-    link: 'https://www.nginx.com/',
-    type: 'devops',
-    image: '/assets/images/skills/nginx.png'
-  },
-  {
     name: 'Visual Studio Code',
-    description: 'Code editor of choice',
+    description: 'Code Editor',
     link: 'https://code.visualstudio.com/',
     type: 'development',
     image: '/assets/images/skills/vscode.png'
-  },
-  {
-    name: 'Figma',
-    description: 'Collaborative Design',
-    link: 'https://www.figma.com/',
-    type: 'design',
-    image: '/assets/images/skills/figma.png'
   }
 ];
 
