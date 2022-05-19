@@ -33,24 +33,28 @@ import { MotionBox } from 'components/shared/animations/motion';
 
 const webLinks = [
   { name: 'About', path: '/about' },
+  { name: 'Projects', path: '/projects' },
+  { name: 'Tech Stack', path: '/tech-stack' },
   // { name: 'Blog', path: '/blog' }
 ];
 
 const mobileLinks = [
+  { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
+  { name: 'Tech Stack', path: '/tech-stack' },
   // { name: 'Open Source', path: '/open-source' },
   // { name: 'Blog', path: '/blog' },
   // { name: 'Changelog', path: '/changelog' }
 ];
 
-const dropdownLinks = [
-  { name: 'Projects', path: '/projects' },
-  { name: 'Tech Stack', path: '/tech-stack' },
-  // { name: 'Open Source', path: '/open-source' },
-  { name: 'Achievements', path: '/achievements' },
-  // { name: 'Changelog', path: '/changelog' }
-  // { name: "Developer Story", path: "/developer-story" }
-];
+// const dropdownLinks = [
+//   // { name: 'Projects', path: '/projects' },
+//   // { name: 'Tech Stack', path: '/tech-stack' },
+//   // { name: 'Open Source', path: '/open-source' },
+//   // { name: 'Achievements', path: '/achievements' },
+//   // { name: 'Changelog', path: '/changelog' }
+//   // { name: "Developer Story", path: "/developer-story" }
+// ];
 
 interface NavLinkProps {
   index?: number;
@@ -98,32 +102,32 @@ interface MenuLinkProps {
   onClose: () => void;
 }
 
-const MenuLink = (props: MenuLinkProps) => {
-  const iconsObj = {
-    '/tech-stack': <Icon as={AiTwotoneThunderbolt} size={18} color={props.color} />,
-    // '/open-source': <Icon as={BsBook} size={18} color={props.color} />,
-    '/achievements': <Icon as={BsCheckCircle} size={18} color={props.color} />,
-    '/projects': <Icon as={MdTimeline} size={18} color={props.color} />,
-    // '/changelog': <Icon as={CgArrowsExchange} size={18} color={props.color} />
-  };
+// const MenuLink = (props: MenuLinkProps) => {
+//   const iconsObj = {
+//     '/tech-stack': <Icon as={AiTwotoneThunderbolt} size={18} color={props.color} />,
+//     // '/open-source': <Icon as={BsBook} size={18} color={props.color} />,
+//     '/achievements': <Icon as={BsCheckCircle} size={18} color={props.color} />,
+//     '/projects': <Icon as={MdTimeline} size={18} color={props.color} />,
+//     // '/changelog': <Icon as={CgArrowsExchange} size={18} color={props.color} />
+//   };
 
-  return (
-    <NextLink href={props.path} passHref>
-      <Link onClick={() => props.onClose()}>
-        <MenuItem
-          color={props.rPath === props.path && props.color}
-          bg={props.rPath === props.path && props.bg}
-          _hover={{ color: props.color, bg: props.bg }}
-        >
-          <HStack>
-            {iconsObj[props.path]}
-            <Text>{props.name}</Text>
-          </HStack>
-        </MenuItem>
-      </Link>
-    </NextLink>
-  );
-};
+//   return (
+//     <NextLink href={props.path} passHref>
+//       <Link onClick={() => props.onClose()}>
+//         <MenuItem
+//           color={props.rPath === props.path && props.color}
+//           bg={props.rPath === props.path && props.bg}
+//           _hover={{ color: props.color, bg: props.bg }}
+//         >
+//           <HStack>
+//             {iconsObj[props.path]}
+//             <Text>{props.name}</Text>
+//           </HStack>
+//         </MenuItem>
+//       </Link>
+//     </NextLink>
+//   );
+// };
 
 export default function TopNav() {
   const linkColor = useLinkColor();
@@ -171,7 +175,7 @@ export default function TopNav() {
                   size={'sm'}
                   showBorder={true}
                   borderColor={linkColor}
-                  src={'/assets/images/placeholder.png'}
+                  src={'/assets/images/logos/dp192.png'}
                 />
               </NextLink>
             </MotionBox>
@@ -185,7 +189,7 @@ export default function TopNav() {
                   onClose={onClose}
                 />
               ))}
-              <Menu autoSelect={false} isLazy>
+              {/* <Menu autoSelect={false} isLazy>
                 {({ isOpen, onClose }) => (
                   <>
                     <MenuButton
@@ -235,7 +239,7 @@ export default function TopNav() {
                     </MenuList>
                   </>
                 )}
-              </Menu>
+              </Menu> */}
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
