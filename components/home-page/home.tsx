@@ -15,7 +15,6 @@ import { MotionBox, MotionFlex } from 'components/shared/animations/motion'
 import Header from 'components/shared/header'
 import NextLink from 'next/link'
 import { useLinkColor } from 'components/theme'
-import PopularArticles from './PopularArticles'
 import { BlogPostProps } from 'interfaces/interface'
 import { newContent } from 'data/data'
 import Projects from 'pages/projects'
@@ -129,31 +128,33 @@ const Home: React.FC<BlogPostProps> = (props) => {
                   setShowEmoji(true)
                 }}
               >
-                Hey!
+                Hi There!
               </Header>
             </MotionBox>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{' '}
             <Box as="strong" fontWeight="600">
-              Tejesh
+              Tejesh <i>(TJ)</i>
             </Box>{' '}
             and I&apos;m a{' '}
-            <Box as="span" whiteSpace="nowrap">
+            <Box as="strong" whiteSpace="nowrap">
               Software Engineer
             </Box>{' '}
             {/* <Box as="span" whiteSpace="nowrap">
               an open source lover&nbsp;
             </Box> */}
             from{' '}
-            <Box as="span" whiteSpace="nowrap">
-              India 🇮🇳
+            <Box as="strong" whiteSpace="nowrap">
+              India 🇮🇳.
             </Box>
           </Box>
-          {/* <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            This is my digital garden, where I write about the things I&apos;m
-            working on and share what I&apos;ve learned. 😊
-          </Box> */}
+          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+          I enjoy developing and implementing solutions to challenging problems.
+          </Box>
+          <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
+            People say that, I get a handle on things quickly! 🤷‍♂️
+          </Box>
         </MotionFlex>
       </Flex>
 

@@ -18,6 +18,7 @@ import Section from 'components/skills/section';
 import { AiTwotoneThunderbolt, AiOutlineCloudServer } from 'react-icons/ai';
 import { BiDesktop } from 'react-icons/bi';
 import { GiSpiderWeb } from 'react-icons/gi';
+import {CgTranscript} from 'react-icons/cg'
 import SkillCard from 'components/skills/skill-card';
 import { skillsArray } from 'data/data';
 import Header from 'components/shared/header';
@@ -34,20 +35,25 @@ const tabList = [
     icon: AiTwotoneThunderbolt
   },
   {
-    name: 'Web Development',
+    name: 'Development',
     filterName: 'development',
     icon: BiDesktop
   },
   {
-    name: 'Web Design',
-    filterName: 'design',
-    icon: GiSpiderWeb
+    name: 'Languages',
+    filterName: 'language',
+    icon: CgTranscript
   },
   {
-    name: 'Devops',
+    name: 'DevOps',
     filterName: 'devops',
     icon: AiOutlineCloudServer
-  }
+  },
+  {
+    name: 'Other',
+    filterName: 'other',
+    icon: GiSpiderWeb
+  },
 ];
 
 const TechStack: NextPage<SkillProps> = ({ skills }) => {
@@ -78,7 +84,7 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
                 maxW="lg"
                 textAlign="center"
               >
-                A list of my favorite tools and technologies that I use on a regular basis.
+                Favourite tools and technologies that I use frequently.
               </Text>
             </VStack>
           </Section>
@@ -109,6 +115,22 @@ const TechStack: NextPage<SkillProps> = ({ skills }) => {
                 <TabPanel px={0}>
                   <MotionBox variants={container} initial="hidden" animate="visible">
                     <SimpleGrid columns={[1, 1, 2]} spacing={4} mt={8}>
+                      {skillsList.map((tool, index) => (
+                        <SkillCard
+                          key={index}
+                          name={tool.name}
+                          description={tool.description}
+                          image={tool.image}
+                          // platform={"web"}
+                          link={tool.link}
+                        />
+                      ))}
+                    </SimpleGrid>
+                  </MotionBox>
+                </TabPanel>
+                <TabPanel px={0}>
+                  <MotionBox variants={container} initial="hidden" animate="visible">
+                    <SimpleGrid columns={[1, 2]} spacing={4} mt={8}>
                       {skillsList.map((tool, index) => (
                         <SkillCard
                           key={index}

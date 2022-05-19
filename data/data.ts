@@ -66,21 +66,21 @@ export const skillsArray = [
     name: 'Typescript',
     description: 'Programming Language',
     link: 'https://www.typescriptlang.org/',
-    type: 'development',
+    type: 'language',
     image: '/assets/images/skills/typescript.png'
   },
   {
     name: 'Python',
     description: 'Programming Language',
     link: 'https://www.python.org/',
-    type: 'development',
+    type: 'language',
     image: '/assets/images/skills/python.png'
   },
   {
     name: 'Java',
     description: 'Programming Language',
     link: 'https://www.java.com/en/',
-    type: 'development',
+    type: 'language',
     image: '/assets/images/skills/java2.png'
   },
   {
@@ -98,10 +98,17 @@ export const skillsArray = [
     image: '/assets/images/skills/django.png'
   },
   {
+    name: 'GraphQL',
+    description: 'API Development',
+    link: 'https://graphql.org/',
+    type: 'development',
+    image: '/assets/images/skills/graphql.png'
+  },
+  {
     name: 'Javascript',
     description: 'Programming Language',
     link: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
-    type: 'development',
+    type: 'language',
     image: '/assets/images/skills/javascript.png'
   },
   {
@@ -115,29 +122,64 @@ export const skillsArray = [
     name: 'PostgreSQL',
     description: 'Database',
     link: 'https://www.postgresql.org/',
-    type: 'database',
+    type: 'development',
     image: '/assets/images/skills/postgresql.png'
   },
   {
     name: 'Redis',
     description: 'Database',
     link: 'https://redis.io/',
-    type: 'database',
+    type: 'development',
     image: '/assets/images/skills/redis.png'
   },
   {
+    name: 'Docker',
+    description: 'Containerization',
+    link: 'https://www.docker.com/',
+    type: 'devops',
+    image: '/assets/images/skills/docker.png'
+  },
+  {
+    name: 'Kubernetes',
+    description: 'Container Orchestration',
+    link: 'https://www.djangoproject.com/',
+    type: 'devops',
+    image: '/assets/images/skills/k8s.png'
+  },
+  {
     name: 'AWS',
-    description: 'DevOps',
+    description: 'Cloud Platform',
     link: 'https://aws.amazon.com/',
     type: 'devops',
     image: 'assets/images/skills/aws.png'
   },
   {
+    name: 'GIT',
+    description: 'Version Control',
+    link: 'https://git-scm.com/',
+    type: 'other',
+    image: '/assets/images/skills/git.png'
+  },
+  {
     name: 'Visual Studio Code',
     description: 'Code Editor',
     link: 'https://code.visualstudio.com/',
-    type: 'development',
+    type: 'other',
     image: '/assets/images/skills/vscode.png'
+  },
+  {
+    name: 'Jira',
+    description: 'Project Management',
+    link: 'https://www.atlassian.com/software/jira',
+    type: 'other',
+    image: '/assets/images/skills/jira.jpeg'
+  },
+  {
+    name: 'Apache Airflow',
+    description: 'Worflow Management',
+    link: 'https://airflow.apache.org/',
+    type: 'other',
+    image: '/assets/images/skills/airflow.png'
   }
 ];
 

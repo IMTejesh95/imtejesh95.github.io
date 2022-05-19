@@ -6,7 +6,7 @@ export const projectsList = [
     site: 'https://github.com/IMTejesh95/gittix-ticketing-app',
     gitHub: 'https://github.com/IMTejesh95/gittix-ticketing-app',
     description:
-      'Ticket exchange app, very basic clone of StubHub, Part of Udemy course, microservices based application with async communication.',
+      'A microservices based application for tickets exchanging which incarporates asynchronous communication utilizing events. And is a fundamental clone of StubHub.',
     techStack: [
       'Node.js',
       'Express.js',
@@ -26,7 +26,7 @@ export const projectsList = [
     site: 'https://github.com/IMTejesh95/webscrape_tickerprice',
     gitHub: 'https://github.com/IMTejesh95/webscrape_tickerprice',
     description:
-      'Python web-scrapper to notify % change in stock price, can be scheduled as cron job.',
+      'Python web-scrapper to inform % alter in stock price, can be planned as cron work.',
     techStack: ['Python', 'BeautifulSoup4', 'WebScraping', 'cron']
   }
 ];
