@@ -25,7 +25,7 @@ const PageLayout = ({
 }: Props): JSX.Element => (
   <Fragment>
     <Meta
-      title={title}
+      title="Tejesh Chauragade | Software Engineer"
       description={description}
       keywords={keywords}
       image={image}

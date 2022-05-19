@@ -56,6 +56,34 @@ export const Tag: React.FC<TagProps> = ({
   )
 }
 
+export const ProjectTag: React.FC<TagProps> = ({
+  colorScheme = 'accent',
+  name,
+  interactive = true,
+  ...props
+}) => {
+  const propsOverride = {
+    size: 'sm',
+    verticalAlign: 'middle',
+    ...useTagStyles(colorScheme),
+  }
+  if (!interactive) {
+    return (
+      <ChakraTag fontWeight={'bold'} fontStyle={'italic'} {...props} {...propsOverride}>
+          {name}
+      </ChakraTag>
+    )
+  }
+
+  return (
+    // <RouteLink to={`/posts?tag=${name}`}>
+    <ChakraTag {...props} {...propsOverride}>
+      {name}
+    </ChakraTag>
+    // </RouteLink>
+  )
+}
+
 export interface TagsProps extends FlexProps {
   interactive?: boolean
   tags?: string[]

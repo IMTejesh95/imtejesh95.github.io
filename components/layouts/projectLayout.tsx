@@ -15,6 +15,7 @@ import {
 import { HiOutlineExternalLink } from 'react-icons/hi';
 import { AiOutlineGithub } from 'react-icons/ai';
 import { MotionBox, MotionFlex, MotionList, MotionText } from 'components/shared/animations/motion';
+import { ProjectTag, Tag } from 'components/shared/Tags';
 
 const ProjectLayoutMed = ({ project }) => {
   return (
@@ -223,7 +224,12 @@ const LeftProjectLayoutLarge = ({ project }) => {
               >
                 {project.techStack.map((s, index) => (
                   <ListItem key={index} mr="3">
-                    <i>{s}</i>
+                    <ProjectTag
+                      key={s}
+                      name={s}
+                      m="2px"
+                    />
+                    {/* <i>{s}</i> */}
                   </ListItem>
                 ))}
               </MotionList>
@@ -305,7 +311,13 @@ const RightProjectLayoutLarge = ({ project }) => {
               >
                 {project.techStack.map((s, index) => (
                   <ListItem key={index} mr="3">
-                    <i>{s}</i>
+                    <ProjectTag
+                      key={s}
+                      name={s}
+                      m="2px"
+                    />
+                  
+                    {/* <i>{s}</i> */}
                   </ListItem>
                 ))}
               </MotionList>
