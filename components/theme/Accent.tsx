@@ -40,6 +40,7 @@ export const AccentPicker: React.FC<IconButtonProps> = ({ ...props }) => {
 }
 
 export const AccentGlobal: React.FC = () => {
+  const color = useLinkColor();
   const [accentKey] = useLocalSetting<ColorKeys>('accent', 'defaultAccent')
   const accent = theme.colors[accentKey]
   const styles = React.useMemo(
@@ -57,8 +58,12 @@ export const AccentGlobal: React.FC = () => {
         --colors-accent-900: ${accent[900]};
         --colors-accent-tag-bg-dark: ${getTagBackgroundDark(accentKey, theme)};
       }
+
+      .react-pdf__Page__canvas {
+        border: ${color} solid 3px;
+      }
     `,
     [accentKey]
-  )
+  );
   return <Global styles={styles} />
 }

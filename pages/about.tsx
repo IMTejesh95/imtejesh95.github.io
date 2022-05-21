@@ -59,19 +59,11 @@ const Card = (props: CardProps) => {
               alt={alt}
             />
             <Stack spacing={2} pl={3} align="left">
-              <Heading
-                align="left"
-                fontSize="xl"
-                color={`mode.${colorMode}.career.text`}
-              >
-                {title}
-              </Heading>
-              <Heading
-                align="left"
-                fontSize="sm"
-                color={`mode.${colorMode}.career.subtext`}
-              >
+              <Heading align="left" fontSize="xl" color={`mode.${colorMode}.career.text`}>
                 {role}
+              </Heading>
+              <Heading align="left" fontSize="sm" color={`mode.${colorMode}.career.subtext`}>
+                <i>{title}</i>
               </Heading>
               <Stack
                 spacing={1}
@@ -86,7 +78,7 @@ const Card = (props: CardProps) => {
                   tagProps={{
                     colorScheme: 'gray',
                     padding: '0 3px',
-                    size: 'sm',
+                    size: 'sm'
                   }}
                 />
               </Stack>
@@ -111,13 +103,13 @@ const Card = (props: CardProps) => {
             tagProps={{
               colorScheme: 'gray',
               padding: '0 3px',
-              size: 'sm',
+              size: 'sm'
             }}
           />
         </Stack>
       </Box>
     </CardTransition>
-  )
+  );
 }
 
 const About = ({ companies, institutes }) => {

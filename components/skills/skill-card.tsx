@@ -7,8 +7,8 @@ import {
   Box,
   Link,
   Image,
-  Skeleton,
-} from '@chakra-ui/react'
+  Skeleton
+} from '@chakra-ui/react';
 import { usePalette } from 'react-palette'
 import { MotionBox } from '../shared/animations/motion'
 import { item } from '../shared/animations/page-transitions'
@@ -56,35 +56,15 @@ const SkillCard = ({ name, image, link, description }) => {
                 {loading ? (
                   <Skeleton height={26} width={26} rounded="md" />
                 ) : (
-                  <Image
-                    src={image}
-                    height={26}
-                    width={26}
-                    layout="fixed"
-                    rounded="md"
-                  />
+                  <Image src={image} height={26} width={26} layout="fixed" rounded="md" />
                 )}
               </Box>
-              <VStack
-                align="start"
-                justify="flex-start"
-                spacing={1}
-                maxW="lg"
-                h="100%"
-              >
+              <VStack align="start" justify="flex-start" spacing={1} maxW="lg" h="100%">
                 <VStack spacing={0} align="start" flexGrow={1}>
-                  <Text
-                    fontWeight="bold"
-                    fontSize="md"
-                    noOfLines={2}
-                    color={linkColor}
-                  >
+                  <Text fontWeight="bold" fontSize="md" noOfLines={2} color={linkColor}>
                     {name}
                   </Text>
-                  <Text
-                    fontSize="sm"
-                    color={useColorModeValue('gray.500', 'gray.200')}
-                  >
+                  <Text fontSize="sm" color={useColorModeValue('gray.500', 'gray.200')}>
                     {description}
                   </Text>
                 </VStack>
@@ -94,7 +74,7 @@ const SkillCard = ({ name, image, link, description }) => {
         </NextLink>
       </MotionBox>
     </MotionBox>
-  )
+  );
 }
 
 export default SkillCard
