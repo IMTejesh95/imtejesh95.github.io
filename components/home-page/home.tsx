@@ -135,7 +135,7 @@ const Home: React.FC<BlogPostProps> = (props) => {
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             My name is{' '}
             <Box as="strong" fontWeight="600">
-              Tejesh <i>(TJ)</i>
+              Tejesh Chauragade <i>(TJ)</i>
             </Box>{' '}
             and I&apos;m a{' '}
             <Box as="strong" whiteSpace="nowrap">
