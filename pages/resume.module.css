@@ -1,0 +1,8 @@
+/*
+You do not need to worry about .error {} colliding with any other `.css` or
+`.module.css` files!
+*/
+.react-pdf__Page__canvas {
+  border: #e2e8f0 solid 25px;
+  border-radius: 15px;
+}
