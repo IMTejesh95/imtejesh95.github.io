@@ -1,1 +1,0 @@
-self.__SSG_MANIFEST=new Set(["\u002Fprojects","\u002Fdeveloper-story","\u002Fabout","\u002F","\u002Fopen-source","\u002Ftech-stack"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
