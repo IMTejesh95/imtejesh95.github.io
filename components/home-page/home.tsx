@@ -10,32 +10,34 @@ import {
   UnorderedList,
   ListItem,
   useColorModeValue,
-} from '@chakra-ui/react'
-import { MotionBox, MotionFlex } from 'components/shared/animations/motion'
-import Header from 'components/shared/header'
-import NextLink from 'next/link'
-import { useLinkColor } from 'components/theme'
-import { BlogPostProps } from 'interfaces/interface'
-import { newContent } from 'data/data'
-import Projects from 'pages/projects'
-import { projectsList } from '../../data/projectData'
+  Button
+} from '@chakra-ui/react';
+import { MotionBox, MotionFlex } from 'components/shared/animations/motion';
+import Header from 'components/shared/header';
+import NextLink from 'next/link';
+import { useLinkColor } from 'components/theme';
+import { BlogPostProps } from 'interfaces/interface';
+import { newContent } from 'data/data';
+import Projects from 'pages/projects';
+import { projectsList } from '../../data/projectData';
+import { AiOutlineArrowRight } from 'react-icons/ai';
 
-const ANIMATION_DURATION = 0.5
-const ORANGE = '#ff9400'
-const emojis = ['👋', '👍', '🖐']
+const ANIMATION_DURATION = 0.5;
+const ORANGE = '#ff9400';
+const emojis = ['👋', '👍', '🖐'];
 
 const Home: React.FC<BlogPostProps> = (props) => {
-  const { posts } = props
-  const linkColor = useLinkColor()
-  const [showEmogi, setShowEmoji] = useState(false)
-  const [emojiCounter, setEmojiCounter] = useState(-1)
+  const { posts } = props;
+  const linkColor = useLinkColor();
+  const [showEmogi, setShowEmoji] = useState(false);
+  const [emojiCounter, setEmojiCounter] = useState(-1);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      if (emojiCounter >= 3) setEmojiCounter(0)
-    }, 500)
-    return () => clearInterval(interval)
-  }, [emojiCounter])
+      if (emojiCounter >= 3) setEmojiCounter(0);
+    }, 500);
+    return () => clearInterval(interval);
+  }, [emojiCounter]);
 
   return (
     <Flex direction="column" align="center">
@@ -44,14 +46,14 @@ const Home: React.FC<BlogPostProps> = (props) => {
           opacity="0"
           initial={{
             translateX: -150,
-            opacity: 0,
+            opacity: 0
           }}
           animate={{
             translateX: 0,
             opacity: 1,
             transition: {
-              duration: ANIMATION_DURATION,
-            },
+              duration: ANIMATION_DURATION
+            }
           }}
           m="auto"
           mb={[16, 16, 'auto']}
@@ -76,44 +78,37 @@ const Home: React.FC<BlogPostProps> = (props) => {
           direction="column"
           initial={{
             opacity: 0,
-            translateX: 150,
+            translateX: 150
           }}
           animate={{
             opacity: 1,
             translateX: 0,
             transition: {
-              duration: ANIMATION_DURATION,
-            },
+              duration: ANIMATION_DURATION
+            }
           }}
         >
           <Box position="relative">
-            <Box
-              position="absolute"
-              width="full"
-              fontSize="2xl"
-              textAlign="center"
-            >
+            <Box position="absolute" width="full" fontSize="2xl" textAlign="center">
               {emojis.map((item, index) => {
                 return (
                   <MotionBox
                     key={index}
                     position="absolute"
                     right="80%"
-                    animate={
-                      showEmogi && emojiCounter === index ? 'show' : 'hide'
-                    }
+                    animate={showEmogi && emojiCounter === index ? 'show' : 'hide'}
                     variants={{
                       hide: { translateY: -80, opacity: 0 },
                       show: {
                         translateY: [0, -40, -60],
-                        opacity: [0, 1, 0],
-                      },
+                        opacity: [0, 1, 0]
+                      }
                     }}
                     initial="hide"
                   >
                     {item}
                   </MotionBox>
-                )
+                );
               })}
             </Box>
             <MotionBox whileHover={{ translateY: -5 }} width="max-content">
@@ -124,8 +119,8 @@ const Home: React.FC<BlogPostProps> = (props) => {
                 cursor="pointer"
                 width="max-content"
                 onClick={() => {
-                  setEmojiCounter((prevCounter) => prevCounter + 1)
-                  setShowEmoji(true)
+                  setEmojiCounter((prevCounter) => prevCounter + 1);
+                  setShowEmoji(true);
                 }}
               >
                 Hi There!
@@ -150,10 +145,17 @@ const Home: React.FC<BlogPostProps> = (props) => {
             </Box>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-          I enjoy developing and implementing solutions to challenging problems.
+            I enjoy developing and implementing solutions to challenging problems.
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             People say that, I get a handle on things quickly! 🤷‍♂️
+          </Box>
+          <Box mt={5} textAlign="left">
+            <Link href="/resume">
+              <Button colorScheme="accent" variant="outline" rightIcon={<AiOutlineArrowRight />}>
+                View Resume
+              </Button>
+            </Link>
           </Box>
         </MotionFlex>
       </Flex>
@@ -162,15 +164,15 @@ const Home: React.FC<BlogPostProps> = (props) => {
         w="100%"
         opacity="0"
         initial={{
-          translateY: 80,
+          translateY: 80
         }}
         animate={{
           translateY: 0,
           opacity: 1,
           transition: {
             delay: ANIMATION_DURATION - 0.1,
-            duration: ANIMATION_DURATION,
-          },
+            duration: ANIMATION_DURATION
+          }
         }}
         zIndex={1}
       >
@@ -181,8 +183,8 @@ const Home: React.FC<BlogPostProps> = (props) => {
         </Box>
       </MotionBox>
     </Flex>
-  )
-}
+  );
+};
 
 const ContentBox = ({ linkColor }) => {
   return (

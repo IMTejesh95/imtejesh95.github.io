@@ -3,28 +3,15 @@ import {
   Flex,
   Avatar,
   HStack,
-  Button,
-  Text,
   Link,
   IconButton,
   useDisclosure,
   useColorModeValue,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  Stack,
-  Icon
+  Stack
 } from '@chakra-ui/react';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
 import { ColorModeSwitcher } from '../theme/ColorModeSwitcher';
-import { AiTwotoneThunderbolt } from 'react-icons/ai';
-import { BiChevronDown } from 'react-icons/bi';
-import { CgArrowsExchange } from 'react-icons/cg';
-import { BsCheckCircle } from 'react-icons/bs';
-import { MdTimeline } from 'react-icons/md';
-import { BsBook } from 'react-icons/bs';
 import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import { AccentPicker } from 'components/theme/Accent';
@@ -35,6 +22,7 @@ const webLinks = [
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Tech Stack', path: '/tech-stack' },
+  { name: 'Resume', path: '/resume' }
   // { name: 'Blog', path: '/blog' }
 ];
 
@@ -42,6 +30,7 @@ const mobileLinks = [
   { name: 'About', path: '/about' },
   { name: 'Projects', path: '/projects' },
   { name: 'Tech Stack', path: '/tech-stack' },
+  { name: 'Resume', path: '/resume' }
   // { name: 'Open Source', path: '/open-source' },
   // { name: 'Blog', path: '/blog' },
   // { name: 'Changelog', path: '/changelog' }

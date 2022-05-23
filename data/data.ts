@@ -1,6 +1,6 @@
 export const companies = [
   {
-    title: 'GS Lab',
+    title: 'Great Software Laboratory (GS Lab), Pune',
     alt: 'GS Lab',
     role: 'Senior Software Engineer',
     skills: ['Node.js', 'TypeScript', 'Python', 'Next.js', 'GraphQL', 'Docker', 'Kubernetes'],
@@ -8,7 +8,7 @@ export const companies = [
     logo: '/assets/images/logos/gslab.jpeg'
   },
   {
-    title: 'Centre for Development of Advanced Computing (C-DAC)',
+    title: 'Centre for Development of Advanced Computing (C-DAC), Pune',
     alt: 'C-DAC',
     role: 'Software Engineer',
     skills: ['Python', 'Django', 'Java', 'JavaScript', 'SpringBoot', 'Angular', 'HPC'],

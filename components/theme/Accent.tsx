@@ -40,6 +40,7 @@ export const AccentPicker: React.FC<IconButtonProps> = ({ ...props }) => {
 }
 
 export const AccentGlobal: React.FC = () => {
+  const color = useLinkColor();
   const [accentKey] = useLocalSetting<ColorKeys>('accent', 'defaultAccent')
   const accent = theme.colors[accentKey]
   const styles = React.useMemo(
@@ -59,6 +60,6 @@ export const AccentGlobal: React.FC = () => {
       }
     `,
     [accentKey]
-  )
+  );
   return <Global styles={styles} />
 }
