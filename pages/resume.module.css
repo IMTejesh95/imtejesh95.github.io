@@ -2,7 +2,11 @@
 You do not need to worry about .error {} colliding with any other `.css` or
 `.module.css` files!
 */
-.react-pdf__Page__canvas {
+.resume_page_light {
   border: #e2e8f0 solid 25px;
+  border-radius: 15px;
+}
+.resume_page_dark {
+  border: #2d3748 solid 25px;
   border-radius: 15px;
 }

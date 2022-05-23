@@ -58,10 +58,6 @@ export const AccentGlobal: React.FC = () => {
         --colors-accent-900: ${accent[900]};
         --colors-accent-tag-bg-dark: ${getTagBackgroundDark(accentKey, theme)};
       }
-
-      .react-pdf__Page__canvas {
-        border: ${color} solid 3px;
-      }
     `,
     [accentKey]
   );
