@@ -1,0 +1,65 @@
+import { Fragment } from 'react';
+import { NextPage } from 'next';
+import { VStack, Text } from '@chakra-ui/react';
+import { projectsList } from '../data/projectData';
+import PageLayout from 'components/layouts/pageLayout';
+import { PageSlideFade } from 'components/shared/animations/page-transitions';
+import Header from 'components/shared/header';
+import {
+  LeftProjectLayoutLarge,
+  ProjectLayoutMed,
+  RightProjectLayoutLarge
+} from 'components/layouts/projectLayout';
+
+// const title = 'Projects 📚';
+const subtitle = 'Few side projects I worked on...';
+
+const TURQUOISE = '#06b6d4';
+
+const Projects: NextPage<any> = (props) => {
+  const { projects } = props;
+
+  return (
+    <Fragment>
+      <PageLayout title={''} description={subtitle}>
+        <PageSlideFade>
+          <VStack align="start">
+            <Header underlineColor={TURQUOISE} mt={0} mb={2}>
+              Projects
+            </Header>
+            <Text
+              // color={useColorModeValue('gray.500', 'gray.200')}
+              color="gray.500"
+              _dark={{ color: 'gray.200' }}
+              textAlign="left"
+            >
+              {subtitle}
+            </Text>
+          </VStack>
+          <VStack spacing={8} mt={['7', '7', '0']}>
+            {projects.map((project, index) => (
+              <Fragment key={index}>
+                <ProjectLayoutMed project={project} />
+                {index % 2 === 0 ? (
+                  <LeftProjectLayoutLarge project={project} />
+                ) : (
+                  <RightProjectLayoutLarge project={project} />
+                )}
+              </Fragment>
+            ))}
+          </VStack>
+        </PageSlideFade>
+      </PageLayout>
+    </Fragment>
+  );
+};
+
+export function getStaticProps() {
+  return {
+    props: {
+      projects: projectsList
+    }
+  };
+}
+
+export default Projects;
