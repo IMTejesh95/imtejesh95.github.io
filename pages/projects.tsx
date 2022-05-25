@@ -12,7 +12,7 @@ import {
 } from 'components/layouts/projectLayout';
 
 // const title = 'Projects 📚';
-const subtitle = 'Few side projects I worked on...';
+const subtitle = 'Few projects I worked on...';
 
 const TURQUOISE = '#06b6d4';
 

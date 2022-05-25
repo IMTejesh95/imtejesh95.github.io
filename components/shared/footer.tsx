@@ -35,7 +35,7 @@ const Footer = () => {
           color="gray.500"
           _dark={{ color: 'gray.200' }}
         >
-          © {new Date().getFullYear()} Tejesh Chauragade{' '}
+          © {new Date().getFullYear()} Tejesh (TJ) | with ❤️ from India 🇮🇳
         </Text>
         {/* <Box fontSize="md" textAlign="left">
         Website built with
