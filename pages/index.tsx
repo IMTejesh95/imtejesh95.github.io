@@ -5,7 +5,7 @@ import PageLayout from 'components/layouts/pageLayout';
 
 const Index: NextPage<BlogPostProps> = () => {
   return (
-    <PageLayout title="Tejesh Chauragade - Full Stack Developer">
+    <PageLayout title="Tejesh Chauragade - Software Engineer">
       <Home />
     </PageLayout>
   );
