@@ -2,11 +2,64 @@
 You do not need to worry about .error {} colliding with any other `.css` or
 `.module.css` files!
 */
-.resume_page_light {
+/* .resume_page_light {
   border: #e2e8f0 solid 25px;
   border-radius: 15px;
 }
 .resume_page_dark {
-  border: #2d3748 solid 25px;
+  border: #4e5b70 solid 25px;
   border-radius: 15px;
 }
+.resume {
+  margin: 1em 0;
+}
+
+.resume .react-pdf__Document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resume .react-pdf__Page {
+  max-width: calc(100% - 2em);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+  margin: 1em;
+}
+
+.resume .react-pdf__Page canvas {
+  max-width: 100%;
+  height: auto !important;
+}
+
+.resume .react-pdf__message {
+  padding: 20px;
+  color: white;
+}
+
+*/
+/* #ResumeContainer {
+  margin: auto;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PDFDocument {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PDFPage {
+  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+.PDFPageOne {
+  margin-bottom: 25px;
+}
+
+.PDFPage>canvas {
+  max-width: 100%;
+  height: auto !important;
+} */
