@@ -6,6 +6,7 @@ import { useLinkColor } from 'components/theme';
 import Projects from 'pages/projects';
 import { projectsList } from '../../data/projectData';
 import { AiOutlineArrowRight } from 'react-icons/ai';
+import Typing from './typing';
 
 const ANIMATION_DURATION = 0.5;
 const ORANGE = '#ff9400';
@@ -112,21 +113,17 @@ const Home: React.FC<any> = () => {
             </MotionBox>
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
-            My name is{' '}
-            <Box as="strong" fontWeight="600">
+            I am{' '}
+            <Box as="strong" fontWeight="600" color={linkColor}>
               Tejesh (TJ) Chauragade
             </Box>{' '}
-            and I&apos;m a{' '}
-            <Box as="strong" whiteSpace="nowrap">
-              Software Engineer
+            <Box as="strong" whiteSpace="nowrap" color={linkColor}>
+              <Typing />
             </Box>{' '}
-            {/* <Box as="span" whiteSpace="nowrap">
-              an open source lover&nbsp;
-            </Box> */}
-            from{' '}
+            {/* from{' '}
             <Box as="strong" whiteSpace="nowrap">
               India 🇮🇳.
-            </Box>
+            </Box> */}
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             I enjoy developing and implementing solutions to challenging problems.
