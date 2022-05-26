@@ -20,6 +20,16 @@ export const projectsList = [
     ]
   },
   {
+    title: 'RBAC System',
+    imageLight: '/assets/images/projects/cover/rbac.jpg',
+    blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
+    site: 'https://github.com/IMTejesh95/oauth-rbac-system',
+    gitHub: 'https://github.com/IMTejesh95/oauth-rbac-system',
+    description:
+      'Role-based access control to authenticated users based on defined roles. Users can authenticated using their social accounts.',
+    techStack: ['Node.js', 'Passport.js', 'TypeScript', 'React', 'Docker', 'K8s', 'OAuth']
+  },
+  {
     title: 'Stock Price Notifier',
     imageLight: '/assets/images/projects/cover/stockpricechange.jpg',
     blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
@@ -30,13 +40,13 @@ export const projectsList = [
     techStack: ['Python', 'BeautifulSoup4', 'WebScraping', 'cron']
   },
   {
-    title: 'Online Banking System (E-Banking)',
+    title: 'E-Banking System',
     imageLight: '/assets/images/projects/cover/ebanking.jpg',
     blurHash: 'L4ADc400P*Zi4Tu1y;Qo00pH#YXl',
     site: 'https://github.com/IMTejesh95/online-banking-sunbeam',
     gitHub: 'https://github.com/IMTejesh95/online-banking-sunbeam',
     description:
-      'An app to automate bank processing and facilitate online banking. It helps the users to easily access the bank facilities such as checking balance, transferring funds, etc, and staff to approve and manage accounts.',
+      'Automated bank processing and facilitate online banking. Users can easily access facilities such as checking balance, transferring funds, etc, and staff can approve and manage accounts.',
     techStack: ['Java', 'Spring', 'Hibernate', 'MySQL', 'JavaScript']
   }
 ];

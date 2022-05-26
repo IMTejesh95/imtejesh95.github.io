@@ -35,20 +35,6 @@ const ProjectLayoutMed = ({ project }: any) => {
       position="relative"
     >
       <a href={project.site} target="_blank" rel="noopener noreferrer">
-        <AspectRatio ratio={1.85 / 1} w="100%" h="100%" rounded="xl">
-          <Image
-            src={project.imageLight}
-            fallback={<Skeleton />}
-            // size="lg"
-            width={'full'}
-            height={'full'}
-            position="absolute"
-            rounded="xl"
-            objectFit="cover"
-            opacity={0.5}
-            _hover={{ opacity: 1 }}
-          />
-        </AspectRatio>
         <Box
           width={'full'}
           height={'full'}
@@ -58,7 +44,22 @@ const ProjectLayoutMed = ({ project }: any) => {
           bg="gray.100"
           opacity="0.5"
           _dark={{ bg: 'gray.900', opacity: '1' }}
-        ></Box>
+        >
+          <AspectRatio ratio={1.85 / 1} w="100%" h="100%" rounded="xl">
+            <Image
+              src={project.imageLight}
+              fallback={<Skeleton />}
+              // size="lg"
+              width={'full'}
+              height={'full'}
+              position="absolute"
+              rounded="xl"
+              objectFit="cover"
+              opacity={0.5}
+              _hover={{ opacity: 1 }}
+            />
+          </AspectRatio>
+        </Box>
       </a>
       <MotionBox
         initial="initial"
@@ -97,23 +98,25 @@ const ProjectLayoutMed = ({ project }: any) => {
                 {project.description}
               </MotionText>
               {project.techStack && (
-                <MotionList
-                  variants={fadeInUp}
-                  display="flex"
-                  fontSize="xs"
-                  justifyContent="start"
-                  mt="3"
-                  // color={useColorModeValue('gray.900', 'gray.100')}
-                  color="gray.900"
-                  _dark={{ color: 'gray.100' }}
-                  fontWeight="bold"
-                >
-                  {project.techStack.map((s, index) => (
-                    <ListItem key={index} mr="2">
-                      <i>{s}</i>
-                    </ListItem>
-                  ))}
-                </MotionList>
+                <Box>
+                  <MotionList
+                    variants={fadeInUp}
+                    display="flex"
+                    fontSize="xs"
+                    justifyContent="start"
+                    mt="3"
+                    // color={useColorModeValue('gray.900', 'gray.100')}
+                    color="gray.900"
+                    _dark={{ color: 'gray.100' }}
+                    fontWeight="bold"
+                  >
+                    {project.techStack.map((s, index) => (
+                      <ListItem key={index} mr="1">
+                        <ProjectTag key={s} name={s} m="1px" />
+                      </ListItem>
+                    ))}
+                  </MotionList>
+                </Box>
               )}
             </Box>
           </a>
