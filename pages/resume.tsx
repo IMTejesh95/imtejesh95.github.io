@@ -10,7 +10,7 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import styled from '@emotion/styled';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resume = '/assets/pdfs/TejeshChauragadeResume_040622.pdf';
+const resume = '/assets/pdfs/TejeshChauragadeResume_150622.pdf';
 const updatedOn = (
   <i>
     4<sup>th</sup> Jun 2022
