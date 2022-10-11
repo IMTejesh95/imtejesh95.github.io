@@ -9,4 +9,4 @@ export const DEVTO_API_URL = 'https://dev.to/api';
 /**
  * SEO constants
  */
-export const SEO_IMAGE = 'https://tejeshchauragade.me/assets/images/site_cover.png';
+export const SEO_IMAGE = 'https://tejeshchauragade.me/assets/images/ebanking.jpg';
