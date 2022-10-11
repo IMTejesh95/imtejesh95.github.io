@@ -9,5 +9,4 @@ export const DEVTO_API_URL = 'https://dev.to/api';
 /**
  * SEO constants
  */
-export const SEO_IMAGE =
-  'https://qa-portfolio-l9cfg.ondigitalocean.app/assets/images/social_cover.png';
+export const SEO_IMAGE = 'https://tejeshchauragade.me//assets/images/social_cover.png';
