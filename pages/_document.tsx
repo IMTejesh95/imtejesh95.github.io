@@ -16,7 +16,7 @@ const props: Props = {
   keywords:
     'backend developer, node.js, python, typescript, graphql, postgresql, tejesh, tejeshchuaragade, chauragade, imtejesh95',
   description:
-    'Enjoy developing and implementing solutions to challenging problems, also a quick learner!',
+    'Enjoy designing and developing solutions to challenging problems, also a quick learner!',
   image: SEO_IMAGE
 };
 
