@@ -126,7 +126,7 @@ const Home: React.FC<any> = () => {
             </Box> */}
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
-            I enjoy developing and implementing solutions to challenging problems.
+            I enjoy designing and developing solutions to challenging problems.
           </Box>
           <Box as="h2" fontSize="2xl" fontWeight="400" mt={5} textAlign="left">
             People say that, I get a handle on things quickly! 🤷‍♂️
