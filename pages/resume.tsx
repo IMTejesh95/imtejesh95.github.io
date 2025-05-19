@@ -13,7 +13,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const resume = '/assets/pdfs/TejeshChauragadeResume.pdf';
 const updatedOn = (
   <i>
-    18<sup>th</sup> Aug 2023
+    15<sup>th</sup> May 2025
   </i>
 );
 
