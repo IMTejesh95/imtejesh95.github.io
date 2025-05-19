@@ -7,12 +7,11 @@ const Typing: React.FC<any> = () => {
       options={{
         strings: [
           'Software Engineer',
+          'Cloud Solution Architect',
           'Full Stack Developer',
           'Node.js Developer',
           'Python Developer',
-          'Open Source Contributor',
           'Art Enthusiast',
-          'A Cook'
         ],
         autoStart: true,
         loop: true,
