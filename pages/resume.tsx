@@ -10,10 +10,10 @@ import 'react-pdf/dist/esm/Page/AnnotationLayer.css';
 import styled from '@emotion/styled';
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-const resume = '/assets/pdfs/TejeshChauragadeResumeNoPic_111022.pdf';
+const resume = '/assets/pdfs/TejeshChauragade_SeniorSoftwareEngineer.pdf';
 const updatedOn = (
   <i>
-    11<sup>th</sup> Oct 2022
+    15<sup>th</sup> May 2025
   </i>
 );
 
