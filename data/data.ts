@@ -1,10 +1,18 @@
 export const companies = [
   {
+    title: 'Ernst & Young (EY), Pune',
+    alt: 'EY',
+    role: 'Senior Consultant',
+    skills: ['Node.js', 'Python', 'IAM', 'AWS', 'Architecture'],
+    period: '2024 - Present',
+    logo: '/assets/images/logos/ey.jpeg'
+  },
+  {
     title: 'Great Software Laboratory (GS Lab), Pune',
     alt: 'GS Lab',
     role: 'Senior Software Engineer',
     skills: ['Node.js', 'TypeScript', 'Python', 'Next.js', 'GraphQL', 'Docker', 'Kubernetes'],
-    period: '2021 - Present',
+    period: '2021 - 2024',
     logo: '/assets/images/logos/gslab.jpeg'
   },
   {
