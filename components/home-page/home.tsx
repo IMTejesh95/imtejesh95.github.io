@@ -115,7 +115,7 @@ const Home: React.FC<any> = () => {
           <Box as="h2" fontSize="2xl" fontWeight="400" textAlign="left">
             I am{' '}
             <Box as="strong" fontWeight="600" color={linkColor}>
-              Tejesh (TJ) Chauragade
+              Tejesh Chauragade
             </Box>{' '}
             <Box as="strong" whiteSpace="nowrap" color={linkColor}>
               <Typing />
